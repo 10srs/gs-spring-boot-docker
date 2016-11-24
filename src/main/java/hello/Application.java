@@ -37,7 +37,7 @@ public class Application {
         log.info(timeString);
 
 
-        return "Hello Docker World.  The time is " + timeString + ". Machine id is: " + EC2MetadataUtils.getInstanceId();
+        return "Hello Docker World from client "+  EC2MetadataUtils.getInstanceId()+" : The time is " + timeString + " from remote machine " + time.getMachineId();
     }
 
 }
